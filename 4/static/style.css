@@ -1,0 +1,77 @@
+:root
+{
+    --MyLightBlue: #44bcd8;
+    --MyBlue: #042f66;
+    --sand:#edb879;
+
+
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+    padding: 5vw;
+    
+}
+
+body
+{
+    background-color: var(--MyBlue);
+}
+
+body.type2
+{
+    background-image: url(../static/pug.jpg);
+    background-size: cover;
+}
+
+h1
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    animation-name: Disapear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.GridContainer
+{
+    display: grid;
+    grid-template-areas:
+    'top_left top_middle top_right'
+    'bottom_left bottom_middle bottom_right';
+    
+}
+.item1
+{
+    grid-area: top_left;
+    border: solid 1px;
+}
+.item2
+{
+    grid-area: top_right;
+    border: solid 1px;
+}
+.item3
+{
+    grid-area: top_middle;
+    border: solid 1px;
+}
+.item4
+{
+    grid-area: bottom_left;
+    border: solid 1px;
+}
+.item5
+{
+    grid-area: bottom_middle;
+    border: solid 1px;
+}
+.item6
+{
+    grid-area: bottom_right;
+    border: solid 1px;
+}
+
+@keyframes Disapear {
+    0% {color: white;}
+    50% {color: rgba(255, 255, 255, 0);}
+    100% {color: white;}
+}
